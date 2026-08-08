@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Volactro — Election & Home Appliances Hub</title>
+<link rel="stylesheet" href="style.css">
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<div class="preloader">
+  <div class="preloader-logo">VOLACTRO</div>
+</div>
+
+<div class="cursor-glow" aria-hidden="true"></div>
+
+<!-- Navbar with Animated Logo -->
+<header class="nav">
+  <div class="container nav-inner">
+    <a href="index.html" class="brand">
+      <img src="volactro logo.png" alt="Volactro Logo" class="brand-logo-img" onerror="this.style.display='none';this.nextElementSibling.style.display='inline';">
+      <span style="display:none; color:#fff;">VOLACTRO</span>
+    </a>
+    <nav class="nav-links">
+      <a href="index.html" class="active">Home</a>
+      <a href="products.html">Products</a>
+      <a href="map.html">Punjab Network</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <div class="nav-cta"><a href="tel:03167272536" class="btn btn-primary">0316 7272536</a></div>
+  </div>
+</header>
+
+<!-- Hero Section -->
+<section class="hero section">
+  <div class="container hero-grid">
+    <div class="hero-copy" data-aos="fade-up">
+      <div class="eyebrow">Punjab's Ultimate Equipment & Appliance Hub</div>
+      <h1 class="display-1">Engineered for <span class="grad-text">Excellence & Campaigns.</span></h1>
+      <p class="hero-sub">Volactro delivers supreme quality election apparatus, secure ballot boxes, flex printing supplies, and state-of-the-art home appliances across Punjab.</p>
+      <div class="hero-actions">
+        <a href="products.html" class="btn btn-primary">Explore Products</a>
+        <a href="tel:03167272536" class="btn btn-ghost">Call: 0316 7272536</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <a href="index.html" class="brand">
+          <img src="volactro logo.png" alt="Volactro Logo" class="brand-logo-img" onerror="this.style.display='none';this.nextElementSibling.style.display='inline';">
+          <span style="display:none; color:#fff;">VOLACTRO</span>
+        </a>
+        <p>Providing top-tier election products and home appliances across Punjab with complete reliability.</p>
+      </div>
+      <div>
+        <h5>Quick Links</h5>
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="map.html">Punjab Network</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>Contact Hub</h5>
+        <ul class="footer-links">
+          <li><a href="tel:03167272536">0316 7272536</a></li>
+          <li><a href="contact.html">Punjab, Pakistan</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 Volactro. All rights reserved.</p>
+      <p>Hotline: 03167272536</p>
+    </div>
+  </div>
+</footer>
+
+<a href="https://wa.me/923167272536?text=Hello%20Volactro,%20I%20want%20to%20place%20an%20order." class="whatsapp-float" target="_blank">💬</a>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init({ duration: 1000, once: true });
+  const glow = document.querySelector('.cursor-glow');
+  window.addEventListener('mousemove', e => {
+    glow.style.left = e.clientX + 'px';
+    glow.style.top = e.clientY + 'px';
+  });
+</script>
+</body>
+</html>

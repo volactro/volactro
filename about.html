@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About Volactro — Premium Brand Identity</title>
+<link rel="stylesheet" href="style.css">
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<style>
+  .about-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; margin-top: 50px; }
+  .about-card { background: var(--panel); border: 1px solid var(--panel-border); border-radius: 16px; padding: 40px; }
+  .about-card h3 { color: #fff; font-size: 22px; margin-bottom: 15px; font-weight: 700; }
+  .about-card p { color: var(--text-muted); line-height: 1.7; font-size: 15px; }
+  
+  .features-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 30px; margin-top: 40px; }
+  .feature-card { background: var(--panel); padding: 40px; border-radius: 16px; border: 1px solid var(--panel-border); text-align: center; }
+  .feature-card h3 { color: #fff; margin-bottom: 15px; font-size: 18px; }
+  .feature-card p { color: var(--text-muted); font-size: 14px; line-height: 1.6; }
+
+  @media(max-width: 768px) { .about-grid, .features-grid { grid-template-columns: 1fr; } }
+</style>
+</head>
+<body>
+
+<div class="cursor-glow" aria-hidden="true"></div>
+
+<!-- Navbar with Animated Logo -->
+<header class="nav">
+  <div class="container nav-inner">
+    <a href="index.html" class="brand">
+      <img src="volactro logo.png" alt="Volactro Logo" class="brand-logo-img" onerror="this.style.display='none';this.nextElementSibling.style.display='inline';">
+      <span style="display:none; color:#fff;">VOLACTRO</span>
+    </a>
+    <nav class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="products.html">Products</a>
+      <a href="about.html" class="active">About</a>
+      <a href="map.html">Punjab Network</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <div class="nav-cta"><a href="tel:03167272536" class="btn btn-primary">0316 7272536</a></div>
+  </div>
+</header>
+
+<section class="hero section">
+  <div class="container">
+    <div class="eyebrow" data-aos="fade-up">About Volactro</div>
+    <h1 class="display-1" data-aos="fade-up">Excellence in every<br><span class="grad-text">apparatus and appliance.</span></h1>
+    <p class="hero-sub" data-aos="fade-up" data-aos-delay="100" style="margin-top: 20px; max-width: 800px;">
+      Volactro is a premier brand dedicated to manufacturing and supplying top-grade election gear, campaign printing tools, and high-efficiency home appliances. Based to serve across Punjab, we ensure elite reliability and unmatched durability.
+    </p>
+  </div>
+</section>
+
+<section class="section-tight">
+  <div class="container">
+    <div class="about-grid">
+      <div class="about-card floating-card" data-aos="fade-up">
+        <h3>Our Mission</h3>
+        <p>To deliver absolute precision, tamper-proof security in election apparatus, and energy-efficient comfort through modern home appliances. We empower organizations and households with top-tier equipment.</p>
+      </div>
+      <div class="about-card floating-card" data-aos="fade-up" data-aos-delay="150">
+        <h3>Our Vision</h3>
+        <p>To become Punjab’s most trusted commercial and residential supply partner, recognized for uncompromising build standards, high-end corporate styling, and prompt bulk fulfillment.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="eyebrow" data-aos="fade-up">Core Values</div>
+    <h2 data-aos="fade-up" data-aos-delay="100" style="font-size: 32px; font-weight: 800; margin-bottom: 30px; color: #fff;">What drives our manufacturing.</h2>
+    <div class="features-grid">
+      <div class="feature-card" data-aos="fade-up">
+        <h3>Uncompromising Build</h3>
+        <p>Engineered with robust industrial materials to withstand rigorous campaign usage and daily home operation.</p>
+      </div>
+      <div class="feature-card" data-aos="fade-up" data-aos-delay="150">
+        <h3>Precision Standards</h3>
+        <p>Every product category undergoes strict quality inspections to maintain elite corporate presentation.</p>
+      </div>
+      <div class="feature-card" data-aos="fade-up" data-aos-delay="300">
+        <h3>Direct Support</h3>
+        <p>Building trusted client connections across Punjab with transparent communication and immediate hotline assistance.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-bottom" style="border:none; justify-content: center;">
+      <p>© 2026 Volactro. All rights reserved. Hotline: 03167272536</p>
+    </div>
+  </div>
+</footer>
+
+<a href="https://wa.me/923167272536?text=Hello%20Volactro,%20I%20want%20to%20know%20more%20about%20your%20company." class="whatsapp-float" target="_blank">💬</a>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>AOS.init({ duration: 1000, once: true });</script>
+</body>
+</html>

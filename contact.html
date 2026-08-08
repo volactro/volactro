@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact Volactro — Punjab Network</title>
+<link rel="stylesheet" href="style.css">
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<style>
+  .contact-wrapper { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; align-items: start; }
+  .contact-card { background: var(--panel); padding: 40px; border-radius: 16px; border: 1px solid var(--panel-border); }
+  .form-control { width: 100%; padding: 12px 16px; background: #0B0C10; border: 1px solid var(--panel-border); border-radius: 8px; color: #fff; margin-bottom: 20px; outline: none; }
+  .form-control:focus { border-color: var(--accent); }
+  @media(max-width: 768px) { .contact-wrapper { grid-template-columns: 1fr; } }
+</style>
+</head>
+<body>
+
+<div class="cursor-glow" aria-hidden="true"></div>
+
+<!-- Navbar with Animated Logo -->
+<header class="nav">
+  <div class="container nav-inner">
+    <a href="index.html" class="brand">
+      <img src="volactro logo.png" alt="Volactro Logo" class="brand-logo-img" onerror="this.style.display='none';this.nextElementSibling.style.display='inline';">
+      <span style="display:none; color:#fff;">VOLACTRO</span>
+    </a>
+    <nav class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="products.html">Products</a>
+      <a href="map.html">Punjab Network</a>
+      <a href="contact.html" class="active">Contact</a>
+    </nav>
+    <div class="nav-cta"><a href="tel:03167272536" class="btn btn-primary">0316 7272536</a></div>
+  </div>
+</header>
+
+<section class="hero section">
+  <div class="container">
+    <div class="eyebrow" data-aos="fade-up">Direct Connection</div>
+    <h1 class="display-1" data-aos="fade-up">Get in touch with<br><span class="grad-text">Volactro Punjab Hub.</span></h1>
+  </div>
+</section>
+
+<section class="section-tight">
+  <div class="container contact-wrapper">
+    
+    <div class="contact-card" data-aos="fade-up">
+      <h2 style="font-size: 24px; margin-bottom: 20px; color: #fff;">Central Booking Office</h2>
+      <p style="margin-bottom: 12px; color: var(--text-muted);"><strong>Phone / Hotline:</strong> <a href="tel:03167272536" style="color: var(--accent);">0316 7272536</a></p>
+      <p style="margin-bottom: 12px; color: var(--text-muted);"><strong>Coverage Region:</strong> Punjab, Pakistan (All Districts)</p>
+      <p style="color: var(--text-muted); margin-bottom: 25px;"><strong>Working Hours:</strong> Mon - Sat: 9:00 AM - 8:00 PM</p>
+
+      <div style="border-radius: 12px; overflow: hidden; border: 1px solid var(--panel-border); height: 240px;">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3448.1!2d74.3587!3d31.5204!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39190483e58107d9%3A0xc3c3857ccb404a8b!2sPunjab%2C%20Pakistan!5e0!3m2!1sen!2s!4v1626000000000!5m2!1sen!2s" width="100%" height="240" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+      </div>
+    </div>
+
+    <div class="contact-card" data-aos="fade-up" data-aos-delay="150">
+      <h2 style="font-size: 24px; margin-bottom: 20px; color: #fff;">Place Order Inquiry</h2>
+      <form>
+        <input type="text" placeholder="Your Name / Organization" class="form-control" required>
+        <input type="tel" placeholder="Phone Number (e.g. 03167272536)" class="form-control" required>
+        <textarea placeholder="Write your requirements (Hoogs, Fans, Washing Machine, Dryer, etc.)" class="form-control" rows="5" required></textarea>
+        <button type="submit" class="btn btn-primary" style="width: 100%; justify-content: center;">Send Inquiry Now</button>
+      </form>
+    </div>
+
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-bottom" style="border:none; justify-content: center;">
+      <p>© 2026 Volactro. Hotline: 03167272536 | Punjab, Pakistan</p>
+    </div>
+  </div>
+</footer>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>AOS.init({ duration: 1000, once: true });</script>
+</body>
+</html>
