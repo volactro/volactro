@@ -8,14 +8,18 @@
 <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
 <style>
-  .map-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; align-items: center; }
-  .district-list { display: grid; grid-template-columns: repeat(2, 1fr); gap: 15px; margin-top: 25px; }
-  .district-badge { background: var(--panel); border: 1px solid var(--panel-border); padding: 18px; border-radius: 14px; display: flex; align-items: center; gap: 12px; font-weight: 700; color: #fff; }
+  .map-grid { display: grid; grid-template-columns: 1.1fr 0.9fr; gap: 50px; align-items: center; }
+  .district-list { display: grid; grid-template-columns: repeat(2, 1fr); gap: 18px; margin-top: 30px; }
+  .district-badge { background: var(--panel); border: 1px solid var(--panel-border); padding: 20px; border-radius: 16px; display: flex; align-items: center; gap: 15px; font-weight: 800; color: #fff; font-size: 16px; }
   .district-badge span { color: var(--accent); }
-  @media(max-width: 768px) { .map-grid { grid-template-columns: 1fr; } .district-list { grid-template-columns: 1fr; } }
+  .network-highlight-box { background: var(--panel); border: 1px solid var(--panel-border); border-radius: 20px; padding: 45px; margin-top: 70px; }
 </style>
 </head>
 <body>
+
+<div class="preloader">
+  <div class="preloader-logo">VOLACTRO</div>
+</div>
 
 <div class="cursor-glow" aria-hidden="true"></div>
 
@@ -37,8 +41,9 @@
 
 <section class="hero section">
   <div class="container">
-    <div class="eyebrow" data-aos="fade-up">Regional Operations</div>
-    <h1 class="display-1" data-aos="fade-up">The Primary Hub for<br><span class="grad-text">Okara, Lahore &amp; Surrounds.</span></h1>
+    <div class="eyebrow" data-aos="fade-up">Regional Logistics Backbone</div>
+    <h1 class="display-1" data-aos="fade-up">Primary Supply Hub Across<br><span class="grad-text">Okara, Lahore &amp; Surrounding Regions.</span></h1>
+    <p class="hero-sub" data-aos="fade-up" style="margin-top: 15px; max-width: 800px;">Our dedicated physical presence and dispatch centers ensure seamless movement of commercial goods and election apparatus without administrative bottlenecks.</p>
   </div>
 </section>
 
@@ -47,41 +52,52 @@
     <div class="map-grid">
       
       <div data-aos="fade-up">
-        <h2 style="font-size: 28px; font-weight: 900; color: #fff; margin-bottom: 15px;">Active Hub Coverage</h2>
-        <p style="color: var(--text-muted); line-height: 1.7; margin-bottom: 20px;">
-          Volactro coordinates bulk shipments, campaign supplies, and home appliance distribution directly across key regional centers to ensure immediate turnaround times.
+        <h2 style="font-size: 32px; font-weight: 900; color: #fff; margin-bottom: 18px;">Active Hub Coverage Areas</h2>
+        <p style="color: var(--text-muted); line-height: 1.8; margin-bottom: 25px; font-size: 16px;">
+          Volactro manages direct regional distribution across major economic and political centers in Punjab, guaranteeing prompt door-to-hub delivery schedules.
         </p>
 
         <div class="district-list">
-          <div class="district-badge"><span>✔</span> Okara (HQ)</div>
-          <div class="district-badge"><span>✔</span> Lahore</div>
-          <div class="district-badge"><span>✔</span> Sahiwal</div>
-          <div class="district-badge"><span>✔</span> Depalpur</div>
-          <div class="district-badge"><span>✔</span> Renala</div>
-          <div class="district-badge"><span>✔</span> Patoki</div>
+          <div class="district-badge"><span>✔</span> Okara (HQ Center)</div>
+          <div class="district-badge"><span>✔</span> Lahore (Metro Hub)</div>
+          <div class="district-badge"><span>✔</span> Sahiwal (Supply Unit)</div>
+          <div class="district-badge"><span>✔</span> Depalpur (Commercial)</div>
+          <div class="district-badge"><span>✔</span> Renala (Logistics Desk)</div>
+          <div class="district-badge"><span>✔</span> Patoki (Active Network)</div>
         </div>
       </div>
 
       <div data-aos="fade-up" data-aos-delay="150">
-        <div style="background: var(--panel); border: 1px solid var(--panel-border); border-radius: 20px; padding: 35px; box-shadow: 0 15px 40px rgba(0,0,0,0.5);">
-          <h3 style="font-size: 20px; color: #fff; margin-bottom: 15px; font-weight: 800;">Central Dispatch Desk</h3>
-          <p style="color: var(--text-muted); font-size: 14px; margin-bottom: 20px;">Contact our central coordination desk for direct orders and inquiries:</p>
+        <div style="background: var(--panel); border: 1px solid var(--panel-border); border-radius: 22px; padding: 40px; box-shadow: 0 20px 50px rgba(0,0,0,0.6);">
+          <h3 style="font-size: 22px; color: #fff; margin-bottom: 15px; font-weight: 800;">Central Dispatch Coordination</h3>
+          <p style="color: var(--text-muted); font-size: 14px; margin-bottom: 25px; line-height: 1.7;">Connect directly with our logistics team for tracking and bulk shipment scheduling.</p>
           
-          <div style="background: var(--bg); padding: 20px; border-radius: 14px; border: 1px solid var(--panel-border); margin-bottom: 20px; display: flex; align-items: center; justify-content: space-between;">
+          <div style="background: var(--bg); padding: 22px; border-radius: 16px; border: 1px solid var(--panel-border); margin-bottom: 25px; display: flex; align-items: center; justify-content: space-between;">
             <div>
-              <span style="font-size: 12px; color: var(--text-muted); display: block;">Official Email</span>
-              <strong style="font-size: 14px; color: var(--accent);">volactro@gmail.com</strong>
+              <span style="font-size: 12px; color: var(--text-muted); display: block; font-weight: 700; text-transform: uppercase;">Official Email</span>
+              <strong style="font-size: 15px; color: var(--accent);">volactro@gmail.com</strong>
             </div>
-            <a href="mailto:volactro@gmail.com" class="btn btn-primary" style="padding: 10px 18px; font-size: 13px;">Email Us</a>
+            <a href="mailto:volactro@gmail.com" class="btn btn-primary" style="padding: 12px 20px; font-size: 13px;">Email Desk</a>
           </div>
 
-          <div style="border-radius: 14px; overflow: hidden; border: 1px solid var(--panel-border); height: 180px;">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d109405.51351114099!2d73.400588!3d30.8138!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3922378855555555%3A0x5555555555555555!2sOkara%2C%20Punjab%2C%20Pakistan!5e0!3m2!1sen!2s!4v1626000000000!5m2!1sen!2s" width="100%" height="180" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+          <div style="border-radius: 16px; overflow: hidden; border: 1px solid var(--panel-border); height: 210px;">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d109405.51351114099!2d73.400588!3d30.8138!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3922378855555555%3A0x5555555555555555!2sOkara%2C%20Punjab%2C%20Pakistan!5e0!3m2!1sen!2s!4v1626000000000!5m2!1sen!2s" width="100%" height="210" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
           </div>
         </div>
       </div>
 
     </div>
+
+    <!-- Network Highlight Footer Box -->
+    <div class="network-highlight-box" data-aos="fade-up">
+      <div style="text-align: center; max-width: 800px; margin: 0 auto;">
+        <span style="color: var(--accent); font-weight: 800; font-size: 12px; text-transform: uppercase; letter-spacing: 2.5px;">Uninterrupted Operations</span>
+        <h3 style="font-size: 30px; font-weight: 900; color: #fff; margin-top: 10px; margin-bottom: 15px;">Reliable Execution Across All Hubs</h3>
+        <p style="color: var(--text-muted); font-size: 16px; line-height: 1.8; margin-bottom: 25px;">Our integrated network ensures that whether your order is destined for commercial markets in Lahore or municipal setups in Okara and Sahiwal, delivery is executed with precision.</p>
+        <a href="contact.html" class="btn btn-primary">Coordinate Shipment Now</a>
+      </div>
+    </div>
+
   </div>
 </section>
 
@@ -105,6 +121,15 @@
         </ul>
       </div>
       <div>
+        <h5>Hub Divisions</h5>
+        <ul class="footer-links">
+          <li><a href="map.html">Okara HQ</a></li>
+          <li><a href="map.html">Lahore Hub</a></li>
+          <li><a href="map.html">Sahiwal Center</a></li>
+          <li><a href="map.html">Depalpur &amp; Patoki</a></li>
+        </ul>
+      </div>
+      <div>
         <h5>Contact Hub</h5>
         <ul class="footer-links">
           <li><a href="tel:03167272536">0316 7272536</a></li>
@@ -120,7 +145,7 @@
   </div>
 </footer>
 
-<a href="https://wa.me/923167272536?text=Hello%20Volactro,%20I%20want%20hub%20delivery%20details." class="whatsapp-float" target="_blank">💬</a>
+<a href="https://wa.me/923167272536?text=Hello%20Volactro,%20I%20want%20hub%20delivery%20details." class="whatsapp-float" target="_blank" title="Chat on WhatsApp">💬</a>
 
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script>AOS.init({ duration: 1000, once: true });</script>
