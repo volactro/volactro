@@ -3,10 +3,21 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Volactro — Election & Home Appliances Hub</title>
+<title>Volactro — Central Election & Home Appliances Hub</title>
 <link rel="stylesheet" href="style.css">
 <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<style>
+  /* Extra Retention Elements & Badges */
+  .retention-banner {
+    background: linear-gradient(90deg, rgba(102, 252, 241, 0.1), rgba(69, 162, 158, 0.1));
+    border: 1px solid var(--panel-border); padding: 15px 20px; border-radius: 14px;
+    display: flex; align-items: center; justify-content: space-between; margin-bottom: 40px;
+  }
+  .live-dot { width: 10px; height: 10px; background: #25d366; border-radius: 50%; display: inline-block; box-shadow: 0 0 10px #25d366; animation: pulseDot 1.5s infinite; }
+  @keyframes pulseDot { 0% { transform: scale(1); opacity: 1; } 50% { transform: scale(1.3); opacity: 0.6; } 100% { transform: scale(1); opacity: 1; } }
+  .feature-highlight-box { background: var(--panel); border: 1px solid var(--panel-border); border-radius: 20px; padding: 40px; margin-top: 60px; }
+</style>
 </head>
 <body>
 
@@ -33,14 +44,23 @@
 </header>
 
 <section class="hero section">
+  <div class="container">
+    <div class="retention-banner" data-aos="fade-down">
+      <div style="display: flex; align-items: center; gap: 12px; font-size: 14px; font-weight: 700; color: #fff;">
+        <span class="live-dot"></span> Live Dispatch Active for Okara, Lahore, Sahiwal, Depalpur, Renala &amp; Patoki
+      </div>
+      <span style="font-size: 12px; color: var(--accent); font-weight: 800; text-transform: uppercase; letter-spacing: 1px;">Verified Hub</span>
+    </div>
+  </div>
+
   <div class="container hero-grid">
     <div class="hero-copy" data-aos="fade-up">
-      <div class="eyebrow">Punjab's Ultimate Central Supply Hub</div>
-      <h1 class="display-1">Engineered for <span class="grad-text">Excellence & Campaigns.</span></h1>
-      <p class="hero-sub">Volactro is the premier corporate hub delivering elite election apparatus, campaign printing solutions, and high-efficiency home appliances directly across regional centers.</p>
+      <div class="eyebrow">Punjab's Ultimate Corporate Supply &amp; Hub Center</div>
+      <h1 class="display-1">Engineered for <span class="grad-text">Excellence, Campaigns &amp; Homes.</span></h1>
+      <p class="hero-sub">Volactro is the heavyweight central supply hub delivering uncompromised quality election apparatus, tamper-proof ballot boxes, flex printing solutions, and heavy-duty home appliances across major industrial hubs.</p>
       <div class="hero-actions">
-        <a href="products.html" class="btn btn-primary">Explore Products</a>
-        <a href="tel:03167272536" class="btn btn-ghost">Hotline: 0316 7272536</a>
+        <a href="products.html" class="btn btn-primary">Explore All Inventory</a>
+        <a href="tel:03167272536" class="btn btn-ghost">Direct Hotline: 0316 7272536</a>
       </div>
     </div>
   </div>
@@ -53,55 +73,76 @@
       </div>
       <div class="stat-card">
         <h3>24/7</h3>
-        <p>Bulk Dispatch Support</p>
+        <p>Active Dispatch Support</p>
       </div>
       <div class="stat-card">
         <h3>Top Grade</h3>
-        <p>Commercial Standards</p>
+        <p>Institutional Standards</p>
       </div>
       <div class="stat-card">
         <h3>Direct</h3>
-        <p>Manufacturer Pricing</p>
+        <p>Manufacturer Rates</p>
       </div>
     </div>
   </div>
 </section>
 
-<section class="section" style="background: rgba(17, 17, 22, 0.4);">
+<!-- Strategic Hub Locations Section -->
+<section class="section" style="background: rgba(13, 13, 18, 0.6);">
   <div class="container">
-    <div class="eyebrow" data-aos="fade-up">Strategic Operations</div>
-    <h2 data-aos="fade-up" style="font-size: 34px; font-weight: 900; color: #fff;">Our Core Regional Hubs</h2>
-    <p style="color: var(--text-muted); margin-top: 10px;" data-aos="fade-up">Operating seamlessly across key commercial and political districts with lightning-fast fulfillment.</p>
+    <div class="eyebrow" data-aos="fade-up">Strategic Operations Backbone</div>
+    <h2 data-aos="fade-up" style="font-size: 38px; font-weight: 900; color: #fff;">Our Core Regional Hub Network</h2>
+    <p style="color: var(--text-muted); margin-top: 12px; font-size: 16px;" data-aos="fade-up">Strategically positioned to manage massive bulk orders and immediate commercial distribution without delays.</p>
     
     <div class="hub-grid">
       <div class="hub-card" data-aos="fade-up" data-aos-delay="0">
         <h4>Okara</h4>
-        <span>Central Headquarters</span>
+        <span>Central Headquarters Hub</span>
       </div>
       <div class="hub-card" data-aos="fade-up" data-aos-delay="100">
         <h4>Lahore</h4>
-        <span>Metropolitan Hub</span>
+        <span>Metropolitan Distribution</span>
       </div>
       <div class="hub-card" data-aos="fade-up" data-aos-delay="200">
         <h4>Sahiwal</h4>
-        <span>Regional Supply</span>
+        <span>Regional Supply Center</span>
       </div>
       <div class="hub-card" data-aos="fade-up" data-aos-delay="300">
         <h4>Depalpur</h4>
-        <span>Commercial Center</span>
+        <span>Commercial Hub</span>
       </div>
       <div class="hub-card" data-aos="fade-up" data-aos-delay="400">
         <h4>Renala</h4>
-        <span>Logistics Hub</span>
+        <span>Logistics &amp; Dispatch</span>
       </div>
       <div class="hub-card" data-aos="fade-up" data-aos-delay="500">
         <h4>Patoki</h4>
-        <span>Active Network</span>
+        <span>Active Supply Network</span>
       </div>
     </div>
+
+    <!-- Extra Trust Building Highlight Box -->
+    <div class="feature-highlight-box" data-aos="fade-up">
+      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 40px; align-items: center;">
+        <div>
+          <span style="color: var(--accent); font-weight: 800; font-size: 12px; text-transform: uppercase; letter-spacing: 2px;">Why Partner With Volactro?</span>
+          <h3 style="font-size: 28px; font-weight: 900; color: #fff; margin-top: 10px; margin-bottom: 15px;">Unmatched Durability &amp; Direct Hub Execution</h3>
+          <p style="color: var(--text-muted); font-size: 15px; line-height: 1.8;">Whether you require heavy-duty election polling equipment or energy-efficient household appliances like Hoogs, Fans, Washing Machines, and Dryers, Volactro guarantees factory-direct execution with complete accountability.</p>
+        </div>
+        <div style="background: var(--bg); padding: 30px; border-radius: 16px; border: 1px solid var(--panel-border);">
+          <h4 style="color: #fff; font-size: 18px; margin-bottom: 10px; font-weight: 800;">Instant Inquiry Desk</h4>
+          <p style="color: var(--text-muted); font-size: 13px; margin-bottom: 20px;">Email us directly or call our hotline for bulk quotation arrangements.</p>
+          <p style="margin-bottom: 10px; font-size: 14px;"><strong>Email:</strong> <a href="mailto:volactro@gmail.com" style="color: var(--accent);">volactro@gmail.com</a></p>
+          <p style="margin-bottom: 20px; font-size: 14px;"><strong>Hotline:</strong> <a href="tel:03167272536" style="color: var(--accent);">0316 7272536</a></p>
+          <a href="contact.html" class="btn btn-primary" style="width: 100%; justify-content: center;">Submit Quote Request</a>
+        </div>
+      </div>
+    </div>
+
   </div>
 </section>
 
+<!-- Footer -->
 <footer class="footer">
   <div class="container">
     <div class="footer-top">
@@ -110,7 +151,7 @@
           <img src="volactro logo.png" alt="Volactro Logo" class="brand-logo-img" onerror="this.style.display='none';this.nextElementSibling.style.display='inline';">
           <span style="display:none; color:#fff;">VOLACTRO</span>
         </a>
-        <p>The primary distribution hub for election supplies and home appliances across Okara, Lahore, Sahiwal, Depalpur, Renala, and Patoki.</p>
+        <p>The definitive central supply hub for high-grade election equipment and modern home appliances across Okara, Lahore, Sahiwal, Depalpur, Renala, and Patoki.</p>
       </div>
       <div>
         <h5>Quick Links</h5>
@@ -119,6 +160,15 @@
           <li><a href="products.html">Products</a></li>
           <li><a href="map.html">Punjab Hubs</a></li>
           <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>Hub Divisions</h5>
+        <ul class="footer-links">
+          <li><a href="map.html">Okara HQ</a></li>
+          <li><a href="map.html">Lahore Hub</a></li>
+          <li><a href="map.html">Sahiwal Center</a></li>
+          <li><a href="map.html">Depalpur &amp; Patoki</a></li>
         </ul>
       </div>
       <div>
@@ -131,13 +181,13 @@
       </div>
     </div>
     <div class="footer-bottom">
-      <p>© 2026 Volactro. All rights reserved.</p>
+      <p>© 2026 Volactro. All rights reserved. Designed for Elite Corporate Retention.</p>
       <p>Email: volactro@gmail.com | Hotline: 03167272536</p>
     </div>
   </div>
 </footer>
 
-<a href="https://wa.me/923167272536?text=Hello%20Volactro,%20I%20want%20to%20place%20an%20order." class="whatsapp-float" target="_blank">💬</a>
+<a href="https://wa.me/923167272536?text=Hello%20Volactro,%20I%20want%20to%20discuss%20bulk%20order%20requirements." class="whatsapp-float" target="_blank" title="Chat on WhatsApp">💬</a>
 
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script>
