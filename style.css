@@ -65,7 +65,6 @@ a { text-decoration: none; color: inherit; transition: 0.2s; }
 .nav-inner { display: flex; align-items: center; justify-content: space-between; }
 .brand { font-weight: 900; font-size: 22px; display: flex; align-items: center; gap: 10px; color: #fff; }
 
-/* Animated Logo Stroke & Glow Effect */
 .brand-logo-img { 
   height: 42px; width: auto; 
   filter: drop-shadow(0 0 2px var(--accent)) drop-shadow(0 0 8px var(--accent-glow)); 
@@ -99,6 +98,19 @@ a { text-decoration: none; color: inherit; transition: 0.2s; }
 .grad-text { background: linear-gradient(135deg, #fff 30%, var(--accent)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
 .hero-sub { font-size: 16px; color: var(--text-muted); line-height: 1.7; margin-bottom: 30px; }
 
+/* Stats Grid */
+.stats-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; margin-top: 50px; }
+.stat-card { background: var(--panel); border: 1px solid var(--panel-border); padding: 25px; border-radius: 16px; text-align: center; }
+.stat-card h3 { font-size: 32px; font-weight: 900; color: #fff; margin-bottom: 5px; text-shadow: 0 0 10px var(--accent-glow); }
+.stat-card p { font-size: 13px; color: var(--text-muted); text-transform: uppercase; letter-spacing: 1px; }
+
+/* Hub Cities Grid */
+.hub-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; margin-top: 40px; }
+.hub-card { background: var(--panel); border: 1px solid var(--panel-border); padding: 30px; border-radius: 16px; text-align: center; transition: 0.3s; }
+.hub-card:hover { border-color: var(--accent); transform: translateY(-5px); box-shadow: 0 10px 30px rgba(102, 252, 241, 0.15); }
+.hub-card h4 { font-size: 20px; color: #fff; margin-bottom: 8px; font-weight: 700; }
+.hub-card span { font-size: 13px; color: var(--accent); font-weight: 600; text-transform: uppercase; letter-spacing: 1px; }
+
 /* Product Cards Grid */
 .work-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 25px; margin-top: 40px; }
 .work-card-link { 
@@ -112,7 +124,6 @@ a { text-decoration: none; color: inherit; transition: 0.2s; }
 .work-card-link:hover h4 { color: var(--accent); }
 .work-card-link span { font-size: 13px; color: var(--text-muted); }
 
-/* Floating Cards Animation */
 @keyframes floatAnim {
   0% { transform: translateY(0px); }
   50% { transform: translateY(-6px); }
@@ -138,7 +149,7 @@ a { text-decoration: none; color: inherit; transition: 0.2s; }
 .footer-bottom { border-top: 1px solid var(--panel-border); padding-top: 25px; display: flex; justify-content: space-between; font-size: 13px; color: var(--text-muted); }
 
 @media(max-width: 768px) {
-  .hero-grid, .work-grid, .footer-top { grid-template-columns: 1fr; }
+  .hero-grid, .work-grid, .footer-grid, .stats-grid, .hub-grid, .footer-top { grid-template-columns: 1fr; }
   .display-1 { font-size: 36px; }
   .nav-links { display: none; }
 }
