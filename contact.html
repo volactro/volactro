@@ -9,9 +9,9 @@
 <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
 <style>
   .contact-wrapper { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; align-items: start; }
-  .contact-card { background: var(--panel); padding: 40px; border-radius: 16px; border: 1px solid var(--panel-border); }
-  .form-control { width: 100%; padding: 12px 16px; background: #0B0C10; border: 1px solid var(--panel-border); border-radius: 8px; color: #fff; margin-bottom: 20px; outline: none; }
-  .form-control:focus { border-color: var(--accent); }
+  .contact-card { background: var(--panel); padding: 40px; border-radius: 20px; border: 1px solid var(--panel-border); }
+  .form-control { width: 100%; padding: 14px 18px; background: var(--bg); border: 1px solid var(--panel-border); border-radius: 12px; color: #fff; margin-bottom: 20px; outline: none; font-size: 14px; transition: 0.3s; }
+  .form-control:focus { border-color: var(--accent); box-shadow: 0 0 15px var(--accent-glow); }
   @media(max-width: 768px) { .contact-wrapper { grid-template-columns: 1fr; } }
 </style>
 </head>
@@ -46,19 +46,19 @@
   <div class="container contact-wrapper">
     
     <div class="contact-card" data-aos="fade-up">
-      <h2 style="font-size: 24px; margin-bottom: 20px; color: #fff;">Central Hub Office</h2>
+      <h2 style="font-size: 24px; margin-bottom: 20px; color: #fff; font-weight: 800;">Central Hub Office</h2>
       <p style="margin-bottom: 12px; color: var(--text-muted);"><strong>Phone / Hotline:</strong> <a href="tel:03167272536" style="color: var(--accent);">0316 7272536</a></p>
       <p style="margin-bottom: 12px; color: var(--text-muted);"><strong>Official Email:</strong> <a href="mailto:volactro@gmail.com" style="color: var(--accent);">volactro@gmail.com</a></p>
       <p style="margin-bottom: 12px; color: var(--text-muted);"><strong>Hub Coverage:</strong> Okara, Lahore, Sahiwal, Depalpur, Renala, Patoki</p>
       <p style="color: var(--text-muted); margin-bottom: 25px;"><strong>Working Hours:</strong> Mon - Sat: 9:00 AM - 8:00 PM</p>
 
-      <div style="border-radius: 12px; overflow: hidden; border: 1px solid var(--panel-border); height: 200px;">
+      <div style="border-radius: 14px; overflow: hidden; border: 1px solid var(--panel-border); height: 200px;">
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d109405.51351114099!2d73.400588!3d30.8138!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3922378855555555%3A0x5555555555555555!2sOkara%2C%20Punjab%2C%20Pakistan!5e0!3m2!1sen!2s!4v1626000000000!5m2!1sen!2s" width="100%" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
       </div>
     </div>
 
     <div class="contact-card" data-aos="fade-up" data-aos-delay="150">
-      <h2 style="font-size: 24px; margin-bottom: 20px; color: #fff;">Place Bulk Order Inquiry</h2>
+      <h2 style="font-size: 24px; margin-bottom: 20px; color: #fff; font-weight: 800;">Place Bulk Order Inquiry</h2>
       <form>
         <input type="text" placeholder="Your Name / Organization" class="form-control" required>
         <input type="email" placeholder="Your Email (e.g. volactro@gmail.com)" class="form-control" required>
