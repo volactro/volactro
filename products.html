@@ -7,30 +7,11 @@
 <link rel="stylesheet" href="style.css">
 <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
-<style>
-  .product-img-card {
-    position: relative; overflow: hidden; min-height: 320px;
-    background: var(--panel); border-radius: 16px;
-    border: 1px solid var(--panel-border); display: flex; flex-direction: column;
-    justify-content: flex-end; padding: 35px; text-decoration: none;
-    transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
-  }
-  .product-img-card:hover { transform: translateY(-8px); border-color: var(--accent); box-shadow: 0 15px 35px rgba(102, 252, 241, 0.2); }
-  .product-content { position: relative; z-index: 2; }
-  .product-content h4 { font-size: 20px; color: #fff; margin-bottom: 6px; font-weight: 700; }
-  .product-content span { font-size: 13px; color: var(--text-muted); display: block; margin-bottom: 15px; }
-  .card-action-btn {
-    display: inline-block; padding: 8px 16px; background: var(--accent); color: var(--bg);
-    font-size: 12px; font-weight: 700; border-radius: 6px; box-shadow: 0 4px 15px var(--accent-glow); transition: 0.2s;
-  }
-  .card-action-btn:hover { background: #fff; }
-</style>
 </head>
 <body>
 
 <div class="cursor-glow" aria-hidden="true"></div>
 
-<!-- Navbar -->
 <header class="nav">
   <div class="container nav-inner">
     <a href="index.html" class="brand">
@@ -60,68 +41,62 @@
     <div class="work-grid">
       
       <!-- 1. Hoogs -->
-      <div class="product-img-card floating-card" data-aos="fade-up">
+      <div class="work-card-link floating-card" data-aos="fade-up">
         <div style="position: absolute; inset: 0; background: #161f2c; display: flex; align-items: center; justify-content: center; color: var(--text-muted); font-size: 13px;">[ Hoogs Media Placeholder ]</div>
-        <div style="position: absolute; inset: 0; background: linear-gradient(to top, rgba(11,12,16,0.95) 15%, rgba(11,12,16,0.3) 100%);"></div>
-        <div class="product-content">
+        <div style="position: absolute; inset: 0; background: linear-gradient(to top, rgba(7,7,9,0.95) 15%, rgba(7,7,9,0.3) 100%);"></div>
+        <div style="position: relative; z-index: 3; padding: 35px 30px;">
           <h4>Hoogs</h4>
           <span>High-performance professional units</span>
-          <a href="tel:03167272536" class="card-action-btn">Order: 03167272536</a>
         </div>
       </div>
 
       <!-- 2. Fans -->
-      <div class="product-img-card floating-card" data-aos="fade-up" data-aos-delay="100">
+      <div class="work-card-link floating-card" data-aos="fade-up" data-aos-delay="100">
         <div style="position: absolute; inset: 0; background: #161f2c; display: flex; align-items: center; justify-content: center; color: var(--text-muted); font-size: 13px;">[ Fans Media Placeholder ]</div>
-        <div style="position: absolute; inset: 0; background: linear-gradient(to top, rgba(11,12,16,0.95) 15%, rgba(11,12,16,0.3) 100%);"></div>
-        <div class="product-content">
+        <div style="position: absolute; inset: 0; background: linear-gradient(to top, rgba(7,7,9,0.95) 15%, rgba(7,7,9,0.3) 100%);"></div>
+        <div style="position: relative; z-index: 3; padding: 35px 30px;">
           <h4>Fans</h4>
           <span>Energy-saving ceiling &amp; pedestal fans</span>
-          <a href="tel:03167272536" class="card-action-btn">Order: 03167272536</a>
         </div>
       </div>
 
       <!-- 3. Washing Machine -->
-      <div class="product-img-card floating-card" data-aos="fade-up" data-aos-delay="200">
+      <div class="work-card-link floating-card" data-aos="fade-up" data-aos-delay="200">
         <div style="position: absolute; inset: 0; background: #161f2c; display: flex; align-items: center; justify-content: center; color: var(--text-muted); font-size: 13px;">[ Washing Machine Placeholder ]</div>
-        <div style="position: absolute; inset: 0; background: linear-gradient(to top, rgba(11,12,16,0.95) 15%, rgba(11,12,16,0.3) 100%);"></div>
-        <div class="product-content">
+        <div style="position: absolute; inset: 0; background: linear-gradient(to top, rgba(7,7,9,0.95) 15%, rgba(7,7,9,0.3) 100%);"></div>
+        <div style="position: relative; z-index: 3; padding: 35px 30px;">
           <h4>Washing Machine</h4>
           <span>Heavy-duty twin tub &amp; automatic systems</span>
-          <a href="tel:03167272536" class="card-action-btn">Order: 03167272536</a>
         </div>
       </div>
 
       <!-- 4. Dryer -->
-      <div class="product-img-card floating-card" data-aos="fade-up" data-aos-delay="300">
+      <div class="work-card-link floating-card" data-aos="fade-up" data-aos-delay="300">
         <div style="position: absolute; inset: 0; background: #161f2c; display: flex; align-items: center; justify-content: center; color: var(--text-muted); font-size: 13px;">[ Dryer Media Placeholder ]</div>
-        <div style="position: absolute; inset: 0; background: linear-gradient(to top, rgba(11,12,16,0.95) 15%, rgba(11,12,16,0.3) 100%);"></div>
-        <div class="product-content">
+        <div style="position: absolute; inset: 0; background: linear-gradient(to top, rgba(7,7,9,0.95) 15%, rgba(7,7,9,0.3) 100%);"></div>
+        <div style="position: relative; z-index: 3; padding: 35px 30px;">
           <h4>Dryer</h4>
           <span>Rapid clothes spinner &amp; dryer units</span>
-          <a href="tel:03167272536" class="card-action-btn">Order: 03167272536</a>
         </div>
       </div>
 
       <!-- 5. Election Ballot Box -->
-      <div class="product-img-card floating-card" data-aos="fade-up" data-aos-delay="400">
+      <div class="work-card-link floating-card" data-aos="fade-up" data-aos-delay="400">
         <div style="position: absolute; inset: 0; background: #161f2c; display: flex; align-items: center; justify-content: center; color: var(--text-muted); font-size: 13px;">[ Ballot Box Placeholder ]</div>
-        <div style="position: absolute; inset: 0; background: linear-gradient(to top, rgba(11,12,16,0.95) 15%, rgba(11,12,16,0.3) 100%);"></div>
-        <div class="product-content">
+        <div style="position: absolute; inset: 0; background: linear-gradient(to top, rgba(7,7,9,0.95) 15%, rgba(7,7,9,0.3) 100%);"></div>
+        <div style="position: relative; z-index: 3; padding: 35px 30px;">
           <h4>Executive Ballot Boxes</h4>
           <span>Secure, tamper-proof polling equipment</span>
-          <a href="tel:03167272536" class="card-action-btn">Order: 03167272536</a>
         </div>
       </div>
 
       <!-- 6. Campaign Flex & Banners -->
-      <div class="product-img-card floating-card" data-aos="fade-up" data-aos-delay="500">
+      <div class="work-card-link floating-card" data-aos="fade-up" data-aos-delay="500">
         <div style="position: absolute; inset: 0; background: #161f2c; display: flex; align-items: center; justify-content: center; color: var(--text-muted); font-size: 13px;">[ Flex Banner Placeholder ]</div>
-        <div style="position: absolute; inset: 0; background: linear-gradient(to top, rgba(11,12,16,0.95) 15%, rgba(11,12,16,0.3) 100%);"></div>
-        <div class="product-content">
+        <div style="position: absolute; inset: 0; background: linear-gradient(to top, rgba(7,7,9,0.95) 15%, rgba(7,7,9,0.3) 100%);"></div>
+        <div style="position: relative; z-index: 3; padding: 35px 30px;">
           <h4>Campaign Flex Banners</h4>
           <span>Weather-resistant HD printing materials</span>
-          <a href="tel:03167272536" class="card-action-btn">Order: 03167272536</a>
         </div>
       </div>
 
@@ -129,7 +104,6 @@
   </div>
 </section>
 
-<!-- Footer -->
 <footer class="footer">
   <div class="container">
     <div class="footer-top">
@@ -168,8 +142,6 @@
 <a href="https://wa.me/923167272536?text=Hello%20Volactro,%20I%20am%20viewing%20your%20products." class="whatsapp-float" target="_blank">💬</a>
 
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-<script>
-  AOS.init({ duration: 1000, once: true });
-</script>
+<script>AOS.init({ duration: 1000, once: true });</script>
 </body>
 </html>
